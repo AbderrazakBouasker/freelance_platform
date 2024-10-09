@@ -16,3 +16,9 @@
 [submodule "freelance_platform_job_microservice"]
 	path = freelance_platform_job_microservice
 	url = git@github.com:AbderrazakBouasker/freelance_platform_job_microservice.git
+[submodule "freelance_platform_eureka_microservice"]
+	path = freelance_platform_eureka_microservice
+	url = git@github.com:AbderrazakBouasker/freelance_platform_eureka_microservice.git
+[submodule "freelance_platform_gateway_microservice"]
+	path = freelance_platform_gateway_microservice
+	url = git@github.com:AbderrazakBouasker/freelance_platform_gateway_microservice.git
