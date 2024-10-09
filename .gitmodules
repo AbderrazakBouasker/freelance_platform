@@ -1,0 +1,3 @@
+[submodule "freelance_platform_user_microservice"]
+	path = freelance_platform_user_microservice
+	url = git@github.com:AbderrazakBouasker/freelance_platform_user_microservice.git
