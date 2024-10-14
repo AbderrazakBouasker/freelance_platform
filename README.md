@@ -16,7 +16,7 @@ to refresh the subdirectories's reference
 go to main repo
  
 ```
-
+git submodule update --recursive --remote
 git add all
 git commit -m "message"
 git push
