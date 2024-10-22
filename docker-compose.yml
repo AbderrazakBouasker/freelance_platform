@@ -1,0 +1,32 @@
+services:
+    mysql:
+        image: mysql:8.0
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+        ports:
+            - "3306:3306"
+        volumes:
+            - mysql_data:/var/lib/mysql
+        networks:
+          - freelance-platform
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        environment:
+            PMA_HOST: mysql
+            PMA_USER: root
+            PMA_PASSWORD: ""
+        ports:
+            - "9080:80"
+        depends_on:
+            - mysql
+        networks:
+            - freelance-platform
+
+volumes:
+    mysql_data:
+
+networks:
+    freelance-platform:
+        external: true
+
