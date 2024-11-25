@@ -22,3 +22,9 @@
 [submodule "freelance_platform_gateway_microservice"]
 	path = freelance_platform_gateway_microservice
 	url = git@github.com:AbderrazakBouasker/freelance_platform_gateway_microservice.git
+[submodule "freelance_platform_config_server"]
+	path = freelance_platform_config_server
+	url = https://github.com/JoseMokeni/freelance_platform_config_server.git
+[submodule "freelance_platform_config"]
+	path = freelance_platform_config
+	url = https://github.com/JoseMokeni/freelance_platform_config.git
