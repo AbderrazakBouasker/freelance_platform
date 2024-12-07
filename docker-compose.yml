@@ -1,32 +1,56 @@
 services:
-    mysql:
-        image: mysql:8.0
-        environment:
-            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-        ports:
-            - "3306:3306"
-        volumes:
-            - mysql_data:/var/lib/mysql
-        networks:
-          - freelance-platform
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "root"
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - freelance-platform
 
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        environment:
-            PMA_HOST: mysql
-            PMA_USER: root
-            PMA_PASSWORD: ""
-        ports:
-            - "9080:80"
-        depends_on:
-            - mysql
-        networks:
-            - freelance-platform
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: ""
+    ports:
+      - "9080:80"
+    depends_on:
+      - mysql
+    networks:
+      - freelance-platform
+
+  keycloak:
+    image: keycloak/keycloak
+    environment:
+      - DB_VENDOR=mysql
+      - DB_ADDR=mysql
+      - DB_DATABASE=keycloakDatabase
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    ports:
+      - "7070:8080"
+    command:
+      - start-dev
+    depends_on:
+      - mysql
+    networks:
+      - freelance-platform
+    volumes:
+      - keycloak_data:/opt/keycloak/data
 
 volumes:
-    mysql_data:
+  mysql_data:
+  keycloak_data:
 
 networks:
-    freelance-platform:
-        external: true
-
+  freelance-platform:
+    external: true
