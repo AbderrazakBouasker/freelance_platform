@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_authentification_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_eureka_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_gateway_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_job_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_messaging_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_notification_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_payment_microservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/freelance_platform_user_microservice" vcs="Git" />
+  </component>
+</project>

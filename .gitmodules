@@ -1,24 +1,30 @@
 [submodule "freelance_platform_user_microservice"]
 	path = freelance_platform_user_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_user_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_user_microservice.git
 [submodule "freelance_platform_payment_microservice"]
 	path = freelance_platform_payment_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_payment_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_payment_microservice.git
 [submodule "freelance_platform_authentification_microservice"]
 	path = freelance_platform_authentification_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_authentification_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_authentification_microservice.git
 [submodule "freelance_platform_notification_microservice"]
 	path = freelance_platform_notification_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_notification_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_notification_microservice.git
 [submodule "freelance_platform_messaging_microservice"]
 	path = freelance_platform_messaging_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_messaging_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_messaging_microservice.git
 [submodule "freelance_platform_job_microservice"]
 	path = freelance_platform_job_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_job_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_job_microservice.git
 [submodule "freelance_platform_eureka_microservice"]
 	path = freelance_platform_eureka_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_eureka_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_eureka_microservice.git
 [submodule "freelance_platform_gateway_microservice"]
 	path = freelance_platform_gateway_microservice
-	url = git@github.com:AbderrazakBouasker/freelance_platform_gateway_microservice.git
+	url = https://github.com/AbderrazakBouasker/freelance_platform_gateway_microservice.git
+[submodule "freelance_platform_config_server"]
+	path = freelance_platform_config_server
+	url = https://github.com/JoseMokeni/freelance_platform_config_server.git
+[submodule "freelance_platform_config"]
+	path = freelance_platform_config
+	url = https://github.com/JoseMokeni/freelance_platform_config.git

@@ -3,7 +3,7 @@
 ## Submodules
 
 to add new subdirectory :
-creeate a new repo
+create a new repo
 go to main repo
 
 ```bash
@@ -28,7 +28,8 @@ git push
 
 to clone the projet with all the submodules
 
-```bashgit submodule update --init --recursive
+```bash
+git submodule update --init --recursive
 
 git clone --recursive <project url>
 
