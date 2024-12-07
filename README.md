@@ -74,7 +74,7 @@ create client
 in client id put "frontend_client"
 click on next
 click on next again
-in valid redirect uri put "http://localhost:4200/\*"
+in valid redirect uri put "http://localhost:4200/*"
 in web origin put "http://localhost:4200"
 save
 
