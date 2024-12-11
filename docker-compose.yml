@@ -2,10 +2,7 @@ services:
   mysql:
     image: mysql:8.0
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_USER: "root"
-      MYSQL_PASSWORD: "root"
     ports:
       - "3306:3306"
     volumes:
@@ -18,7 +15,7 @@ services:
     environment:
       PMA_HOST: mysql
       PMA_USER: root
-      PMA_PASSWORD: ""
+      PMA_PASSWORD: "root"
     ports:
       - "9080:80"
     depends_on:
